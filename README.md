@@ -8,7 +8,9 @@
     ```
 4. Create a .env file and add the required values (Check .env.example)
 5. Start command 
-    ``` npm start / node server.js 
+    ``` 
+    npm start / node server.js 
+    ```
 
 # Tech used
 1. Tech used :
@@ -24,7 +26,7 @@
 2. POST /login – authenticate and return a token
 
 
-                curl --location 'http://127.0.0.1:5000/auth/login' \
+        curl --location 'http://127.0.0.1:5000/auth/login' \
         --header 'Content-Type: application/json' \
         --data '{
             "username" : "",
@@ -88,7 +90,7 @@
 
 # Additional Feature:
 
-       ###   GET /search – Search books by title or author (partial and case-insensitive)
+7.    GET /search – Search books by title or author (partial and case-insensitive)
 
                 curl --location 'http://127.0.0.1:5000/books/search?query=<search word>' 
        
